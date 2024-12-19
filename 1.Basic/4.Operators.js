@@ -95,3 +95,12 @@
 // let x = 5 + 5;
 // let y = "5" + 5;
 // let z = "Hello" + 5;                    // Adding two numbers, will return the sum, but adding a number and a string will return a string
+
+
+// 9. Comma
+
+// The comma operator , is one of the rarest and most unusual operators. Sometimes, it’s used to write shorter code, so we need to know it in order to understand what’s going on.
+// The comma operator allows us to evaluate several expressions, dividing them with a comma ,. Each of them is evaluated but only the result of the last one is returned.
+
+// let n = (1 + 2, 3 + 4);
+// console.log(n)
