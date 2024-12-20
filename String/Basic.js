@@ -25,6 +25,16 @@ let text = `He's often called "Johnny"`;
 console.log(text)
 
 
+// Interpolation
+
+// Template String provide an easy way to interpolate variables and expressions into strings.
+
+let firstName = "John";
+let lastName = "Doe";
+let text2 = `Welcome ${firstName}, ${lastName}!`;
+console.log("interpolation",text2)
+
+
 /*
     There are other, less common special characters:
     Character	    Description
