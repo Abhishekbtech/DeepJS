@@ -20,11 +20,11 @@ console.log("charCodeAt", str.charCodeAt(0));
 
 
 // [ ] :-   Now you can use myString.at(-2) instead of charAt(myString.length-2).
-console.log("[ ] or at( )", str[1], str.at(1));
+console.log("[ ]", str[1]);
 
 
 // at() :- is an ES2022 feature
-console.log("[ ] or at( )", str[1], str.at(1));
+console.log("at( )", str.at(1));
 
 
 // slice() :-   extracts a part of a string and returns the extracted part in a new string. 
@@ -94,7 +94,7 @@ console.log("replace", str.replace("Abhishek", "Abhi"));
 
 // ReplaceAll() :- method allows you to specify a regular expression instead of a string to be replaced
 let str1 = "Abhishek kya hal Abhishek or kya ho Abhishek "
-console.log("replaceAll", str.replaceAll("Abhishek", "Abhi"));
+console.log("replaceAll", str1.replaceAll("Abhishek", "Abhi"));
 
 
 // split() :- A string can be converted to an array with the split() method
