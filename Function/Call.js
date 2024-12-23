@@ -35,4 +35,4 @@ const person4 = {
     lastName: "Doe"
 }
 
-person.fullName.call(person1, "Oslo", "Norway");
+person.fullName.call(person4, "Oslo", "Norway");
