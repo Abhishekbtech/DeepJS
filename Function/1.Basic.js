@@ -167,35 +167,6 @@ const x5 = (x, y) => { return x * y };
 // console.log("Rest operator ", fun(1, 2, 3, 4, 5));
 
 
-// Pass By Value :- the function is called by directly passing the value of the variable as an argument. So any changes made inside the function do not affect the original value.
-// function Passbyvalue(a, b) {
-//     let tmp;
-//     tmp = b;
-//     b = a;
-//     a = tmp;
-//     console.log(`Inside Pass by value function -> a = ${a} b = ${b}`);
-// }
-// let a = 1;
-// let b = 2;
-// console.log(`Before calling Pass by value Function -> a = ${a} b = ${b}`);
-// Passbyvalue(a, b);
-// console.log(`After calling Pass by value Function -> a = ${a} b = ${b}`);
-
-
-// Pass by Reference :- Function is called by directly passing the reference/address of the variable as an argument. So changing the value inside the function also change the original value. In JavaScript array and Object follows pass by reference property.
-// function PassbyReference(obj) {
-//     let tmp = obj[0];
-//     obj[0] = obj[1];
-//     obj[1] = tmp;
-
-//     console.log(`Inside Pass By Reference Function -> a = ${obj[0]} b = ${obj[1]}`);
-// }
-
-// let obj = [10, 20]
-// console.log(`Before calling Pass By Reference Function -> a = ${obj[0]} b = ${obj[1]}`);
-// PassbyReference(obj)
-// console.log(`After calling Pass By Reference Function -> a = ${obj[0]} b = ${obj[1]}`);
-
 
 // Pure Functions :- A pure function is a function that always returns the same output when given the same input, and it does not have any side effects
 // function geek(value) {
