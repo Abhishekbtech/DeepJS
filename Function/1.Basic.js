@@ -109,3 +109,137 @@ const x4 = (x, y) => x * y;
 // You can only omit the return keyword and the curly brackets if the function is a single statement. Because of this, it might be a good habit to always keep them
 
 const x5 = (x, y) => { return x * y };
+
+
+
+
+// Local variables
+// A variable declared inside a function is only visible inside that function.
+
+// function showMessage() {
+//     let message = "Hello, I'm JavaScript!"; // local variable
+//     console.log(message);
+// }
+// showMessage(); // Hello, I'm JavaScript!
+// console.log(message);
+
+
+// Outer variables
+// A function can access an outer variable as well
+
+// let userName = 'John';
+// function showMessage() {
+//   userName = "Bob"; // (1) changed the outer variable
+//   let message = 'Hello, ' + userName;
+//   console.log(message);
+// }
+// console.log( userName ); // John before the function call
+// showMessage();
+// console.log( userName ); // Bob, the value was modified by the function
+
+
+// Function with varibales
+// let c = 10;
+// function funcWithVar(a, b) {
+//     return a * c + b * c;
+// }
+// console.log("Function With Varibales ", funcWithVar(4, 2))
+
+
+// Function with default Value
+// function funwith(name, age = 24) {
+//     return `My name is ${name} and i am ${age} old `;
+// }
+// console.log("Function With default vale ", funwith('John'))
+// console.log("Function With default vale ", funwith('John', 25))
+
+
+// Rest operator(...)
+// function fun(...input) {
+//     let sum = 0;
+//     for (let i of input) {
+//         sum += i;
+//     }
+//     return sum;
+// }
+// console.log("Rest operator ", fun(1, 2));
+// console.log("Rest operator ", fun(1, 2, 3));
+// console.log("Rest operator ", fun(1, 2, 3, 4, 5));
+
+
+// Pass By Value :- the function is called by directly passing the value of the variable as an argument. So any changes made inside the function do not affect the original value.
+// function Passbyvalue(a, b) {
+//     let tmp;
+//     tmp = b;
+//     b = a;
+//     a = tmp;
+//     console.log(`Inside Pass by value function -> a = ${a} b = ${b}`);
+// }
+// let a = 1;
+// let b = 2;
+// console.log(`Before calling Pass by value Function -> a = ${a} b = ${b}`);
+// Passbyvalue(a, b);
+// console.log(`After calling Pass by value Function -> a = ${a} b = ${b}`);
+
+
+// Pass by Reference :- Function is called by directly passing the reference/address of the variable as an argument. So changing the value inside the function also change the original value. In JavaScript array and Object follows pass by reference property.
+// function PassbyReference(obj) {
+//     let tmp = obj[0];
+//     obj[0] = obj[1];
+//     obj[1] = tmp;
+
+//     console.log(`Inside Pass By Reference Function -> a = ${obj[0]} b = ${obj[1]}`);
+// }
+
+// let obj = [10, 20]
+// console.log(`Before calling Pass By Reference Function -> a = ${obj[0]} b = ${obj[1]}`);
+// PassbyReference(obj)
+// console.log(`After calling Pass By Reference Function -> a = ${obj[0]} b = ${obj[1]}`);
+
+
+// Pure Functions :- A pure function is a function that always returns the same output when given the same input, and it does not have any side effects
+// function geek(value) {
+//     return value + 100;
+// }
+// console.log("Pure Functions ", geek(34));
+
+// // Impure Functions:- Impure functions are functions that can modify the state of the application or have side effects.
+// function incrementflag(flag) {
+//     flag++;
+//     return flag;
+// }
+// console.log("Impure Functions ", incrementflag(1));
+
+
+// Higher-Order Function :- A function that receives another function as an argument or that returns a new function or both is called Higher-order function. Higher-order functions are only possible because of the First-class function.
+// const greet =  function(name){
+//     return function(m){
+//       console.log(`Hi!! ${name}, ${m}`);
+//     }
+// }
+
+// const greet_message = greet('ABC');
+
+
+// callback function :-  is a function passed into another function as an argument same as above
+// let value = 1;
+
+// const abhi = doSomething(() => {
+//   value = 2;
+// });
+
+// console.log(value);
+
+
+// Callback function, passed as a parameter in the higher order function
+// function callbackFunction() {
+//     console.log('I am  a callback function');
+// }
+
+// // higher order function
+// function higherOrderFunction(fun) {
+//     console.log('I am higher order function')
+//     return fun();
+// }
+
+// higherOrderFunction(callbackFunction);
